@@ -24,3 +24,4 @@ define line($file, $line, $ensure = 'present') {
 include backuppc-client
 include deployment-user
 include nrpe
+include java

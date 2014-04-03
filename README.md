@@ -13,9 +13,7 @@ git puppet
 
 Prepare Puppet modules:
 ```
-su -
-mkdir -p puppet/modules
-cd puppet/modules
+cd modules
 git clone https://github.com/hoccer/puppet-backuppc-client.git backuppc-client
 git clone https://github.com/hoccer/puppet-deployment-user.git deployment-user
 git clone https://github.com/hoccer/puppet-nrpe.git nrpe

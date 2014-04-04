@@ -24,5 +24,5 @@ git clone https://github.com/puppetlabs/puppetlabs-java.git java
 Apply Puppet configuration:
 
 ```
-puppet apply build1.pp --no-report --modulepath modules --verbose
+puppet apply init.pp --no-report --modulepath modules --verbose
 ```

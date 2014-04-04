@@ -1,4 +1,4 @@
-build1-puppet-configuration
+generic-slave-puppet-configuration
 ===========================
 
 #### Requirement

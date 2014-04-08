@@ -23,6 +23,13 @@ define line($file, $line, $ensure = 'present') {
 
 include backuppc-client
 include deployment-user
-#include jenkins-user
+include jenkins-user
 include nrpe
 include java
+include maven
+
+maven::settings { 'maven-user-settings' :
+  mirrors => [{ id => "archiva.hoccer.de", url => "https://archiva.hoccer.de/repository/internal/", mirrorof => "external:*,!snapshots" }],
+  repos => [ { id => "snapshots", name => "Archiva Managed Snapshot Repository", url => "https://archiva.hoccer.de/repository/snapshots/", snapshots => { enabled => true} }],
+  user    => 'jenkins'
+}

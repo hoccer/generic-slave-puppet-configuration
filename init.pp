@@ -33,3 +33,7 @@ maven::settings { 'maven-user-settings' :
   repos => [ { id => "snapshots", name => "Archiva Managed Snapshot Repository", url => "https://archiva.hoccer.de/repository/snapshots/", snapshots => { enabled => true} }],
   user    => 'jenkins'
 }
+
+package { "pwgen":
+    ensure => "installed"
+}

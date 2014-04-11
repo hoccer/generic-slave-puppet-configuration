@@ -26,6 +26,13 @@ include deployment-user
 include jenkins-user
 include nrpe
 include java
+file_line { 'urandom fix':
+  path  => '/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/security/java.security',
+  line  => 'securerandom.source=file:/dev/./urandom',
+  match => '^securerandom.source=.*',
+}
+
+
 include maven
 
 maven::settings { 'maven-user-settings' :

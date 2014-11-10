@@ -1,9 +1,23 @@
-forge "http://forge.puppetlabs.com"
+forge "https://forgeapi.puppetlabs.com"
 
-mod 'puppetlabs/stdlib'
-mod 'backuppc-client', :git => 'https://github.com/hoccer/puppet-backuppc-client.git'
-mod 'deployment-user', :git => 'https://github.com/hoccer/puppet-deployment-user.git'
-mod 'jenkins-user', :git => 'https://github.com/hoccer/puppet-jenkins-user.git'
-mod 'nrpe', :git => 'https://github.com/hoccer/puppet-nrpe.git'
-mod 'java', :git => 'https://github.com/puppetlabs/puppetlabs-java.git'
-mod 'maven', :git => 'https://github.com/maestrodev/puppet-maven.git'
+mod "puppetlabs/stdlib"
+mod "puppetlabs/java"
+
+mod 'maestrodev/maven',
+  :git => 'https://github.com/maestrodev/puppet-maven.git'
+
+mod "hoccer/backuppc-client",
+  :git => "git@github.com:hoccer/puppet-backuppc-client.git",
+  :ref => "master"
+
+mod "hoccer/deployment-user",
+  :git => "git@github.com:hoccer/puppet-deployment-user.git",
+  :ref => "master"
+
+mod "hoccer/nrpe",
+  :git => "git@github.com:hoccer/puppet-nrpe.git",
+  :ref => "master"
+
+mod "hoccer/jenkins-user",
+  :git => "git@github.com:hoccer/puppet-jenkins-user.git",
+  :ref => "master"

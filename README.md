@@ -21,7 +21,7 @@ sudo apt-get update
 sudo apt-get -y install git-core puppet ruby-dev make
 
 # install librarian-puppet gem (you might need to reopen your terminal afterwards)
-sudo gem install librarian-puppet --version 1.4.0
+sudo gem install librarian-puppet --version 1.3.0
 
 # checkout puppet provisioning repository and apply
 git clone git@github.com:hoccer/generic-slave-puppet-configuration.git

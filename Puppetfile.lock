@@ -1,59 +1,53 @@
 FORGE
-  remote: http://forge.puppetlabs.com
+  remote: https://forgeapi.puppetlabs.com
   specs:
-    maestrodev/wget (1.4.1)
-    puppetlabs/stdlib (4.1.0)
+    maestrodev-wget (1.5.6)
+    puppetlabs-java (1.1.2)
+      puppetlabs-stdlib (>= 2.4.0)
+    puppetlabs-stdlib (4.3.2)
 
 GIT
-  remote: https://github.com/hoccer/puppet-backuppc-client.git
+  remote: git@github.com:hoccer/puppet-backuppc-client.git
   ref: master
   sha: 4069d31f337a81b8ef429cf1e4fcf35280e9e2d0
   specs:
-    backuppc-client (0.0.1)
+    hoccer-backuppc-client (0.0.1)
 
 GIT
-  remote: https://github.com/hoccer/puppet-deployment-user.git
+  remote: git@github.com:hoccer/puppet-deployment-user.git
   ref: master
-  sha: 37a89ee4be24ad4819b67b80455c8d82561b7df7
+  sha: fd8f8155a65420f27b8c259d29c4158ba57c68fd
   specs:
-    deployment-user (0.0.1)
+    hoccer-deployment-user (0.0.1)
 
 GIT
-  remote: https://github.com/hoccer/puppet-jenkins-user.git
+  remote: git@github.com:hoccer/puppet-jenkins-user.git
   ref: master
   sha: a90d5a3e6bbb0b1a2023a13402e0faff9c42fc50
   specs:
-    jenkins-user (0.0.1)
+    hoccer-jenkins-user (0.0.1)
 
 GIT
-  remote: https://github.com/hoccer/puppet-nrpe.git
+  remote: git@github.com:hoccer/puppet-nrpe.git
   ref: master
-  sha: 2930fe7e6f0a1138f3e0aa50a8a7086adc17d78c
+  sha: daa1f9014bd258b7f9a1e98c82a416e949439010
   specs:
-    nrpe (0.0.1)
+    hoccer-nrpe (0.0.1)
 
 GIT
   remote: https://github.com/maestrodev/puppet-maven.git
   ref: master
-  sha: 95f22a16f4f992bc9c2c714636535b17e2b1c5fa
+  sha: 7c29e391577a7a889b8b3984ed0268b60a6980f6
   specs:
-    maven (1.1.12)
-      maestrodev/wget (>= 1.0.0)
-
-GIT
-  remote: https://github.com/puppetlabs/puppetlabs-java.git
-  ref: master
-  sha: b31311c52ffb0dc59e0f8854aa0be7a5fd34ba45
-  specs:
-    java (1.1.0)
-      puppetlabs/stdlib (>= 0.1.6)
+    maestrodev-maven (1.2.3)
+      maestrodev-wget (>= 1.0.0)
 
 DEPENDENCIES
-  backuppc-client (>= 0)
-  deployment-user (>= 0)
-  java (>= 0)
-  jenkins-user (>= 0)
-  maven (>= 0)
-  nrpe (>= 0)
-  puppetlabs/stdlib (>= 0)
+  hoccer-backuppc-client (>= 0)
+  hoccer-deployment-user (>= 0)
+  hoccer-jenkins-user (>= 0)
+  hoccer-nrpe (>= 0)
+  maestrodev-maven (>= 0)
+  puppetlabs-java (>= 0)
+  puppetlabs-stdlib (>= 0)
 

@@ -54,3 +54,7 @@ librarian-puppet install --verbose
 # apply puppet configuration
 sudo -E puppet apply init.pp --no-report --modulepath modules --verbose
 ```
+
+## Extend Java Security
+
+To run all cryptography tests it might be necessary to extend the java security policy. This is described [here](https://github.com/hoccer/hoccer-talk-spike/wiki/Extend-Java-Security).
